@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Movie } from 'src/movie.model';
+import { Movie } from './movie.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MovieService {
 
-  movie: Movie;
+  movie?:Movie;
+
   constructor() { }
 
   movieList =
