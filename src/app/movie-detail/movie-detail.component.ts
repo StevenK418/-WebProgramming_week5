@@ -8,7 +8,7 @@ import { Movie } from '../movie.model';
 })
 export class MovieDetailComponent implements OnInit {
 
-  @Input() MovieDetails?:Movie;
+  @Input() movieDetails?:Movie;
   constructor() { }
 
   ngOnInit(){
