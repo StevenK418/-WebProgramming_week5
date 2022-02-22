@@ -23,9 +23,9 @@ export class MovieService {
     return this.movieList;
   }
 
-  addMovie(movieTitle:string, moviedirector:string, movieyear:string)
+  addMovie(movieTitle:string, movieyear:string, moviedirector:string )
   {
-    this.movieList.push(new Movie(movieTitle, moviedirector, movieyear));
+    this.movieList.push(new Movie(movieTitle,  movieyear, moviedirector));
   }
 
   ngOnInit()

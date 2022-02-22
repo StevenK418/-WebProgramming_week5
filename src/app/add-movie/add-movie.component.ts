@@ -11,9 +11,9 @@ export class AddMovieComponent implements OnInit {
   constructor(private movieService: MovieService) { }
 
 
-  addNewMovie(movietitle: HTMLInputElement, moviediretcor: HTMLInputElement, movieyear: HTMLInputElement):boolean
+  addNewMovie(movietitle: HTMLInputElement, movieyear: HTMLInputElement, moviediretcor: HTMLInputElement):boolean
   {
-    this.movieService.addMovie(movietitle.value, moviediretcor.value, movieyear.value);
+    this.movieService.addMovie(movietitle.value,  movieyear.value, moviediretcor.value);
     return false;
   }
   ngOnInit(): void {
