@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddMovieComponent } from './add-movie/add-movie.component';
 import { ListMoviesComponent } from './list-movies/list-movies.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddMovieComponent,
-    ListMoviesComponent
+    ListMoviesComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,
